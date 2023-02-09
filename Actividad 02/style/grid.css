@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+body {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(59, 59, 59);
+    color: azure;
+    font-family: 'Itim', cursive;
+    /* Centramos todo */
+    justify-content: center;
+}
+p {
+    margin: 0;
+    text-align: center;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Example 1 */
+.wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+}
+.item1 {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(217, 255, 0);
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+/* Example 2 */
+.wrapper2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+}
+.item2 {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(0, 255, 213);
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+/* Example 3 */
+.wrapper3 {
+    display: grid;
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+    grid-template-columns: 33% 33% 33%;
+}
+.item3 {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    border-width: 3px;
+    height: 100%;
+    width: 100%;
+    grid-column: 2 / span 3;
+}
+
+/* Example 4 */
+.wrapper4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+}
+
+.item4 {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(119, 0, 255);
+    border-radius: 5px;
+    border-width: 3px;
+    grid-row-start: 3;
+}
+
+/* Example 5 */
+.wrapper5 {
+    display: grid;
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+.item5-a {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(0, 255, 64);
+    border-radius: 5px;
+    border-width: 3px;
+    grid-area: header;
+    height: 70px;
+}
+.item5-b {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(208, 255, 0);
+    border-radius: 5px;
+    border-width: 3px;
+    grid-area: main;
+    height: 70px;
+}
+.item5-c {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(255, 0, 191);
+    border-radius: 5px;
+    border-width: 3px;
+    grid-area: sidebar;
+    height: 70px;
+}
+.item5-d {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    height: 70px;
+    border-color: rgb(255, 145, 0);
+    border-radius: 5px;
+    border-width: 3px;
+    grid-area: footer;
+}
+
+/* Example 6 */
+.wrapper6{
+    display: grid;
+    width: 100%;
+    max-width: 600px;
+    height: 220px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+}
+.item6 {
+    display: grid;
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(255, 238, 0);
+    border-radius: 5px;
+    border-width: 3px;
+    height: 50%;
+    width: 50%;
+    padding: 10px;
+}
+
+.item6-child {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(255, 0, 255);
+    border-radius: 5px;
+    border-width: 3px;
+    height: 33%;
+    width: 100%;
+    align-self: end;
+}
+
+/* Example 7 */
+.wrapper7 {
+    display: grid;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
+
+}
+.item7 {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    border-width: 3px;
+    height: 33%;
+    width: 100%;
+}
+
+/* Example 8 */
+.wrapper8 {
+    display: grid;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+    justify-items: end;
+}
+.item8 {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(0, 255, 76);
+    border-radius: 5px;
+    border-width: 3px;
+    height: 100%;    
+    width: 33%;
+}
+
+/* Example 9 */
+.wrapper9 {
+    display: grid;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: 50% 50%;
+    column-gap: 20px;
+}
+
+.item9 {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(255, 0, 212);
+    border-radius: 5px;
+    border-width: 3px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Example 10 */
+.wrapper10 {
+    display: grid;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(46, 44, 44);
+    padding: 10px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 40% 40%;
+    row-gap: 15%;
+}
+
+.item10 {
+    background-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-color: rgb(217, 255, 0);
+    border-radius: 5px;
+    border-width: 3px;
+    height: 100%;
+    width: 100%;
+}
