@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kanit:wght@200&family=Montserrat:wght@100&display=swap');
+*, *:before, *:after {/* The * is a wildcard, so this will apply to all elements, in this case it will make the box-sizing property apply to all elements */
+    box-sizing: inherit;
+}
+html {/* This makes the border-box property to make the width of the element include the padding and border */
+    box-sizing: border-box;
+}
+body{
+    background-color: #3d3d3d;
+    padding: 20px;
+    font: 100%;
+}
+header{
+    display: flex;
+    background-color: #3d3d3d;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-family: 'Montserrat', sans-serif;   
+}
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color : azure;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: azure;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container{
+    margin: 20px 0px  0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Definition */
+.definition{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 50px 0px;
+    width: 100%;
+}
+.definition .text{
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+    color: azure;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Example 1 */
+.icon1 {
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 5px;
+  }
+.bar1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #eee;
+    padding: 20px;
+}
+.bar1 p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.search1{
+    flex:1;
+    margin: 5px;
+}
+.search1 input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.search1 input:hover{
+    background-color: #e6e5e5;
+}
+
+/* Example 2 */
+.bar2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.bar2 li{
+    float: left;
+}
+.bar2 a{
+    color: #ffffff;
+    font-family: 'kanit', sans-serif;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.bar2 a:hover{
+    background-color: #111;
+}
+.active{
+    background-color:  #04AA6D;
+}
+
+/* BONUS */
+@media (max-width: 650px) {
+    header{
+        font-size: 15px;
+        text-align: center;
+    }
+    .definition .text{
+        width: 100%;
+    }
+    /* Example1 */
+    .bar1 {
+      flex-wrap: wrap;
+      /* top: 0; This will make the bar to be at the top */
+    }
+    .icon1 {
+      order: 0 !important;
+    }
+    .username1 {
+      order: 1 !important;
+      width: 100%;
+      margin: 15px;
+    }
+    .search1 {
+      order: 2 !important;
+      width: 100%;
+    }
+    /* Example2 */
+    .bar2 ul{
+        /* bottom: 0; This will make the bar to be at the bottom */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .active{
+        background-color: #333;
+    }
+    
+  }
