@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperaturas</title>
+    <link rel="stylesheet" href="/Actividad 02/style/style.css">
+    <link rel="icon" type="image/x-icon" href="/Actividad 02/IMG/favicon.png">
+</head>
+<body>
+    <h1>Conversor de temperaturas</h1>
+    <form class="container">
+        <fieldset>
+            <legend>Conversor de temperaturas</legend>
+            <div class="container-1">
+                <div class="fields">
+                    <label for="">Grados:</label>
+                    <input class="input-text" type="number" name="grados" id="grados" placeholder="Ingrese grados...">
+                </div>
+                <div class="fields">
+                    <label for="">Tipo de conversión:</label>
+                    <select class="input-text" name="conversion" id="selectBox" aria-label="label for the select">
+                        <option disabled selected value="0">Seleccione una opción...</option>
+                        <option value="1">Celsius a Fahrenheit</option>
+                        <option value="2">Celsius a Kelvin</option>
+                        <option value="3">Fahrenheit a Celsius</option>
+                        <option value="4">Fahrenheit a Kelvin</option>
+                        <option value="5">Kelvin a Celsius</option>
+                        <option value="6">Kelvin a Fahrenheit</option>
+                    </select>
+                </div>
+                <div class="fields fake">
+                    <label for="">Resultado:</label>
+                    <div class="input-text" id="resultado">
+                        <p id="result">Equivalencia...</p>
+                    </div>
+                </div>
+                <div class="fields">
+                    <label for="" id="operacion">Formula</label>
+                </div>
+                <div class="fields align-button">
+                    <input class="button" onclick="conversionFcn()" type="button" value="Calcular">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <script src="/Actividad 02/JS/conversion.js"></script>
+</body>
+</html>

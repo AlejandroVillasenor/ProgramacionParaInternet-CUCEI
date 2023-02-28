@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+body{
+    background: linear-gradient(90deg, rgb(63, 58, 158) 0%, rgb(131, 131, 172) 0%, rgb(255, 255, 255) 100%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Golos Text', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Container */
+.container{
+    background-color: rgb(78, 79, 119);
+    width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 35px;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+}
+
+
+.container-1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+}
+/* Fields */
+.container legend{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.container fieldset{
+    border: none;
+}
+
+.input-text {
+    background-color: black;
+    border: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.input-text select {
+    border: none;
+}
+
+.input-text select option {
+    text-transform: uppercase;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;  
+    color: white;
+    text-transform: uppercase;
+}
+
+input{
+    text-transform: uppercase;
+}
+
+input:hover{
+    background-color: rgb(102, 102, 102);
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5);/* Transparency */
+
+}
+/* Button */
+.button{
+    width: 50%;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(152, 89, 255);
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
+.button:hover{
+    background-color: rgb(152, 89, 255);
+    cursor: pointer;
+}
+
+.align-button{
+    display: flex;
+    align-items: center;
+}
+
+/* BONUS */
+@media screen and (max-width: 600px ){
+    body {
+        margin: 40px 10px 0 10px;
+        
+    }
+    .container{
+        width: 80%;
+    }
+    .container-1{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+    
+    
