@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo if-Switch</title>
+    <link rel="stylesheet" href="/Actividad 01/style/style.css">
+    <link rel="icon" type="image/x-icon" href="/Actividad 01/IMG/favicon.png">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Uso de las condicionales en JavaScript</h1>
+        </div>
+        <div class="examples">
+            <div class="container-1">
+                <h2>Ejemplo del uso de IF</h2>
+                <div class="container-2">
+                    <h3>Comprobar si eres mayor o menor de edad :</h3>
+                    <label for="">Ingresa tu edad:</label>
+                    <input onchange="edadFcn()" type="number" id="edad" value="15" placeholder="Ingresa tu edad"><!-- Importante el atributo id -->
+                    <div class="result result1">
+                        <h4 id="resultado">Resultado</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Insertamos una linea para dividirlo en dos -->
+            <hr class="line">
+            <div class="container-1">
+                <h2>Ejemplo de Switch case</h2>
+                <div class="container-2">
+                    <h3>Calculo de la escala del indice de masa corporal (IMC) :</h3>
+                    <label for="">Ingresa tu perso en Kilogramos(Kg):</label>
+                    <input type="number" id="peso" value="70" placeholder="Ingresa tu peso">
+                    <label for="">Ingresa tu altura en metros(m):</label>
+                    <input type="number" id="altura" value="1.70" placeholder="Ingresa tu altura">
+                    <div class="result imcResult result2">
+                        <h4 id="resultado2">Resultado</h4> 
+                    </div>
+                    <input onclick="imcFcn()" type="button" value="Calcular" class="button">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Rodrigo Villaseñor 2023 &copy;</p>
+    </footer>
+</body>
+<!-- Script de Js -->
+<script src="/Actividad 01/js/funciones.js"></script>
+</html>
