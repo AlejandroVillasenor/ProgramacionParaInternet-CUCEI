@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Actividad 03/IMG/favicon.png">
+    <link rel="stylesheet" href="/Actividad 03/style/style.css">
+    <title>Themes JS</title>
+</head>
+<body>
+    <div class="title">
+        <h1 id="titulo">Formato de tablas</h1>
+    </div>
+    <div class="container-controllers">
+        <div class="container-themes">
+            <label for="">Temas</label>
+            <select name="sThemes" id="selectBox" aria-label="label for the select" onchange="temaFcn()">
+                <option value="0">Default</option>
+                <option value="1">Shades of purple</option>
+                <option value="2">Tokyo Night</option>
+                <option value="3">PowerShell</option>
+                <option value="4">Cobalt2</option>
+                <option value="5">Gruvbox</option>
+            </select>
+        </div>
+    
+        <div class="font-size">
+            <label for="">Tamaño de la fuente</label> 
+            <input type="number" value="12" placeholder="Ingresa un número" name="size" id="fontsize" onchange="fontSizeFcn()">
+        </div>
+    </div>
+    <div class="tabla">
+        <div class="container2">
+            <table sumary="Clientes satisfechos de mi trabajo">
+                <caption>Visualiza los temas en la tabla</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" class="headtab">Nombre(Cliente)</th>
+                        <th scope="col" class="headtab">Direccion</th>
+                        <th scope="col" class="headtab">Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row1">
+                        <td>Juan Carlos y Georgina</td>
+                        <td>
+                            <a href="https://goo.gl/maps/GZHDMWZb5XqAo7Qa7" title="Ver en Google Maps">
+                                <svg class="icon1" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" " fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="11" r="3" />
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                </svg>
+                            </a>
+                            <p>
+                                Zapopan, Jalisco(Ver en Google Maps)
+                            </p>
+                        </td>
+                        <td>3323509031</td>
+                    </tr>
+                    <tr class="row2">
+                        <td>CUCEI</td>
+                        <td>
+                            <a href="https://goo.gl/maps/cGhewbvcZ5XQy7PL6" title="Ver en Google Maps">
+                                <svg class="icon2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="11" r="3" />
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                </svg>
+                            </a>
+                            <p>
+                                Tlaquepaque, Jalisco(Ver en Google Maps)
+                            </p>
+                        </td>
+                        <td>3312345678</td>
+                    </tr>
+                    <tr class="row1">
+                        <td>Elisa López</td>
+                        <td>
+                            <a href="https://goo.gl/maps/fRBjqVuQLUcEvHQt6" title="Ver en Google Maps">
+                                <svg class="icon1" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="11" r="3" />
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                </svg>
+                            </a>
+                            <p>
+                                Guadalajara, Jalisco(Ver en Google Maps)
+                            </p>
+                        </td>
+                        <td>3311344478</td>
+                    </tr>
+                    <tr class="row2">
+                        <td>María Fernanda</td>
+                        <td>
+                            <a href="https://goo.gl/maps/CCeGGdW38p4RTGGKA" title="Ver en Google Maps">
+                                <svg class="icon2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="11" r="3" />
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                </svg>
+                            </a>
+                            <p>
+                                Zapopan, Jalisco(Ver en Google Maps)
+                            </p>
+                        </td>
+                        <td>3323323656</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p> Rodrigo Villaseñor 2023 &copy;</p>
+    </footer>
+    <script src="/Actividad 03/js/formatos.js"></script>
+</body>
+</html>
